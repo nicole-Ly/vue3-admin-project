@@ -1,6 +1,5 @@
-<script setup lang="ts">
+<script setup lang='ts'>
 import { ref } from 'vue'
-
 defineProps<{ msg: string }>()
 
 const count = ref(0)
@@ -39,6 +38,7 @@ const count = ref(0)
   </p>
 
   <button
+    class="btn"
     type="button"
     @click="count++"
   >
@@ -50,11 +50,13 @@ const count = ref(0)
   </p>
 </template>
 
-<style scoped>
+<style scoped lang='scss'>
 a {
   color: #42b983;
 }
-
+.btn{
+  color:red;
+}
 label {
   margin: 0 0.5em;
   font-weight: bold;
