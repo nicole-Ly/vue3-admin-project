@@ -17,5 +17,7 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
+    camelcase: 'off', // 关闭驼峰命名规则
+    '@typescript-eslist/camelcase': 0
   }
 }
