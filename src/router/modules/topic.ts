@@ -7,22 +7,22 @@ const routes: RouteRecordRaw = {
     {
       path: 'topic',
       name: 'topic',
-      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/TopicIndex.vue')
+      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/index.vue')
     },
     {
       path: 'topic/add',
       name: 'add',
-      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/TopicAdd.vue')
+      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/add.vue')
     },
     {
       path: 'topic/detail',
       name: 'detail',
-      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/TopicDetail.vue')
+      component: import(/* webpackChunkName: "topic" */ '@/views/topic/topicManage/detail.vue')
     },
     {
       path: 'interactive',
       name: 'interactive',
-      component: import(/* webpackChunkName: "interactive" */ '@/views/topic/interactiveManage/InteractiveIndex.vue')
+      component: import(/* webpackChunkName: "interactive" */ '@/views/topic/interactiveManage/index.vue')
     }
   ]
 }

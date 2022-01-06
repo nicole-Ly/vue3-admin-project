@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/login',
     name: 'login',
-    component: import(/* webpackChunkName: "home" */ '@/views/login/LoginIndex.vue')
+    component: import(/* webpackChunkName: "home" */ '@/views/login/index.vue')
   }
 ]
 

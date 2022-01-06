@@ -7,13 +7,13 @@
     class="demo-dynamic"
   >
     <el-form-item
-      label="Activity name"
+      label="用户名"
       prop="name"
     >
       <el-input v-model="ruleForm.account" />
     </el-form-item>
     <el-form-item
-      label="Confirm"
+      label="密码"
       prop="checkPass"
     >
       <el-input
@@ -52,7 +52,7 @@ const rules = reactive({
   ]
 })
 const router = useRouter()
-const submitForm = async () => {
+const submitForm = async() => {
   // 表单验证
   const valid = await formRef.value?.validate()
   if (!valid) {
